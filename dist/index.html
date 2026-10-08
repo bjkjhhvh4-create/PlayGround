@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PlayGround</title>
+  <style>
+    :root { color-scheme: light dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    main {
+      max-width: 720px;
+      width: 100%;
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 16px;
+      padding: 40px 32px;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,.35);
+    }
+    h1 { margin: 0 0 12px; font-size: 2.5rem; line-height: 1.1; }
+    p { margin: 0 0 12px; color: #cbd5e1; font-size: 1.05rem; line-height: 1.6; }
+    .badge {
+      display: inline-block;
+      font-size: .8rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      background: #22c55e;
+      color: #052e16;
+      font-weight: 700;
+      padding: 6px 12px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-top: 24px;
+      text-align: left;
+    }
+    .card {
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 16px;
+    }
+    .card h2 { margin: 0 0 8px; font-size: 1rem; }
+    .card p { margin: 0; font-size: .9rem; }
+    footer { margin-top: 24px; font-size: .8rem; color: #94a3b8; }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="badge">Live preview ready</span>
+    <h1>PlayGround</h1>
+    <p>A minimal static app served from <code>dist/</code> on port 3000. This page renders without build tools or network dependencies.</p>
+    <div class="grid">
+      <div class="card"><h2>Static</h2><p>Served as plain HTML, CSS included inline.</p></div>
+      <div class="card"><h2>Healthy</h2><p>Responds on <code>/</code> for local and public checks.</p></div>
+      <div class="card"><h2>Capturable</h2><p>Desktop and mobile screenshots render immediately.</p></div>
+    </div>
+    <footer>Built output: dist/index.html inside PROJECT_DIR</footer>
+  </main>
+</body>
+</html>
