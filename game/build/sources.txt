@@ -1,0 +1,6 @@
+src/com/noor/oasis/Art.java
+src/com/noor/oasis/Game.java
+src/com/noor/oasis/GameView.java
+src/com/noor/oasis/AudioSys.java
+src/com/noor/oasis/MainActivity.java
+build/gen/com/noor/oasis/R.java
